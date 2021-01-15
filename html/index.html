@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Elma</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="top">
+            <div class="opacity">
+                <div class="border">
+                    <p>Elma</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="nav">
+            <div class="paper">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <div class="lists toppage">
+                                    <p class="list_title">Top</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <div class=" lists about">
+                                    <p class="list_title">About</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="photos.html">
+                                <div class="lists photos">
+                                    <p class="list_title">Photos</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="works.html">
+                                <div class="lists works">
+                                    <p class="list_title">Works</p>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <div class="contact">
+            <p>Contact</p>
+        </div>
+        <footer>@elma</footer>
+    </div>
+
+</body>
+
+
+<script>
+    $(function() {
+        //        $(window).scroll(function() {
+        // if ($(window).scrollTop() > 250) {
+        // $('.nav').css('opacity', '1');
+        // } else {
+        // $('.nav').css('opacity', '0');
+        // }
+        // });
+
+
+
+
+        $(window).on('scroll', function() { //スクロールした時
+            var scroll = $(window).scrollTop(); //scrollを定義
+            if (scroll > 50) { //50px以上スクロール
+                $('body').addClass('overlay'); //bodyにoverlayというクラスをつける。つまり.overlay .セレクタ　でスクロール後の処理を定義できる！
+            } else {
+                $('body').removeClass('overlay'); //50px以上スクロールしていなかったらoverlayをとる、つまり新しい処理を削除。
+            }
+        });
+
+        $(window).load(function() {
+            $('body').addClass('loaded');
+            setTimeout(function() {
+                $('body').addClass('finished');
+            }, 3500);
+        });
+
+
+    });
+</script></html>
