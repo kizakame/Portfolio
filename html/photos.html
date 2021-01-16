@@ -8,92 +8,116 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/lightbox.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../css/photos.css" type="text/css">
+    <link rel="stylesheet" href="../css/all.css" type="text/css">
     <link href="../css/lightbox.css" rel="stylesheet" />
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/css/modaal.min.css">
--->
 </head>
 
 <body>
     <div class="wrap">
 
         <header>
-            <a href = "index.html"><p class="title">Portfolio</p></a>
+            <a class="home" href="../index.html">
+                <p class="title">Portfolio</p>
+            </a>
+            <a href="#nav" id="icon">
+                <p class="menufont">MENU</p>
+            </a>
+            <div id="nav"> </div>
+            <section id="paper">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">
+                                <div class="lists toppage">
+                                    <p class="list_title">Top</p>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li><a href="works.html">
+                                <div class="works lists">
+                                    <p class="list_title">Works</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="photos.html">
+                                <div class="photos lists">
+                                    <p class="list_title">Photos</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                <div class="about lists">
+                                    <p class="list_title">About</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
         </header>
+        <p class="page">Photos</p>
         <div class="contents">
             <section class="gallery">
                 <section class="season">
                     <p>Spring</p>
-                    <div class="season-pictures spring">
-                        <a href="../img/Spring/cherry_blossum.JPG" data-lightbox="image"><img src="../img/Spring/cherry_blossum.JPG"></a><a href="../img/Spring/IMG_6405%202.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6405%202.JPG"></a><a href="../img/Spring/IMG_6421.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6421.JPG"></a><a href="../img/Spring/IMG_6429%202.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6429%202.JPG"></a><a href="../img/Spring/IMG_6476.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6476.JPG"></a><a href="../img/Spring/IMG_6522.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6522.JPG"></a><a href="../img/Spring/IMG_6545%202.JPG" data-lightbox="image"><img src="../img/Spring/IMG_6545%202.JPG"></a><a href="../img/Spring/pinkandwhite.JPG" data-lightbox="image"><img src="../img/Spring/pinkandwhite.JPG"></a>
+                    <div class="season-pictures">
+                        <a href="../img/Spring/cherry_blossum.JPG" data-lightbox="image"><img
+                                src="../img/Spring/cherry_blossum.JPG"></a><a href="../img/Spring/IMG_6405%202.JPG"
+                            data-lightbox="image"><img src="../img/Spring/IMG_6405%202.JPG"></a><a
+                            href="../img/Spring/IMG_6421.JPG" data-lightbox="image"><img
+                                src="../img/Spring/IMG_6421.JPG"></a><a href="../img/Spring/IMG_6429%202.JPG"
+                            data-lightbox="image"><img src="../img/Spring/IMG_6429%202.JPG"></a><a
+                            href="../img/Spring/IMG_6476.JPG" data-lightbox="image"><img
+                                src="../img/Spring/IMG_6476.JPG"></a><a href="../img/Spring/IMG_6522.JPG"
+                            data-lightbox="image"><img src="../img/Spring/IMG_6522.JPG"></a><a
+                            href="../img/Spring/IMG_6545%202.JPG" data-lightbox="image"><img
+                                src="../img/Spring/IMG_6545%202.JPG"></a><a href="../img/Spring/pinkandwhite.JPG"
+                            data-lightbox="image"><img src="../img/Spring/pinkandwhite.JPG"></a>
                     </div>
                 </section>
                 <section class="season">
                     <p>Summer</p>
+                    <div class="season-pictures">
+                        <a href="../img/Summer/fire.jpg" data-lightbox="image"><img src="../img/Summer/fire.jpg"></a>
+                        <a href="../img/Summer/summerflour.jpg" data-lightbox="image"><img
+                                src="../img/Summer/summerflour.jpg"></a>
+                    </div>
                 </section>
                 <section class="season">
                     <p>Autumn</p>
+                    <div class="season-pictures">
+                        <a href="../img/Autumn/autumn1.jpg" data-lightbox="image"><img
+                                src="../img/Autumn/autumn1.jpg"></a>
+                        <a href="../img/Autumn/autumn2.jpg" data-lightbox="image"><img
+                                src="../img/Autumn/autumn2.jpg"></a>
+                    </div>
                 </section>
                 <section class="season">
                     <p>Winter</p>
-                </section>
-                <section class="season">
-                    <p>Spring</p>
+                    <div class="season-pictures">
+                        <p class="coming">comming soon...</p>
+                    </div>
                 </section>
             </section>
         </div>
 
-        <a href="#nav" id="icon">modal
-            <!--                <p>ハンバーガーアイコン</p>-->
-        </a>
-        <div id="nav"> </div>
-        <section id="paper">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <div class="lists toppage">
-                                <p class="list_title">Top</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <div class="about lists">
-                                <p class="list_title">About</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="photos.html">
-                            <div class="photos lists">
-                                <p class="list_title">Photos</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="works.html">
-                            <div class="works lists">
-                                <p class="list_title">Works</p>
-                            </div>
-                        </a>
-                    </li>
 
-                </ul>
-            </nav>
-        </section>
 
     </div>
 
     <script src="../lightbox.js"></script>
 </body>
 <script>
-    $(function() {
-        $('#icon').on('click', function() {
+    $(function () {
+        $('#icon').on('click', function () {
             $('#nav,#paper').fadeIn();
             //            $('#nav').css('display', 'flex')
         });
 
-        $('#nav').on('click', function() {
+        $('#nav').on('click', function () {
             $('#nav,#paper').fadeOut();
         });
 
@@ -125,4 +149,6 @@
         // loading_content: 'Now Loading, Please Wait.' // 読み込み時のテキスト表示
         // });
     });
-</script></html>
+</script>
+
+</html>

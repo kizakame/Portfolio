@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  text-align: center;
+}
+
+p.page_title {
+  margin-top: 100px;
+  width: 1080px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-family: "筑紫B丸ゴシック";
+}
+
+.workphotos {
+  text-align: center;
+  margin-top: 78px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  display: inline-block;
+  width: 300px;
+}
+
+p.discription {
+  margin-top: 111px;
+  margin-bottom: 100px;
+}
+
+p {
+  width: 1080px;
+}

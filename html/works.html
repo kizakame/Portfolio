@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <title>Works</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="../css/works/worksall.css" rel="stylesheet" type="text/css">
     <link href="../css/all.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="wrap">
+        <!-- 共通部分 -->
         <header>
-            <a href = "index.html"><p class="title">Portfolio</p></a>
+            <a class="home" href="../index.html">
+                <p class="title">Portfolio</p>
+            </a>
         </header>
-        <a href="#nav" id="icon">modal
+        <a href="#nav" id="icon">
+            <p class="menufont">MENU</p>
             <!--                <p>ハンバーガーアイコン</p>-->
         </a>
         <div id="nav"> </div>
@@ -21,9 +26,23 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">
+                        <a href="../index.html">
                             <div class="lists toppage">
                                 <p class="list_title">Top</p>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li><a href="works.html">
+                            <div class="works lists">
+                                <p class="list_title">Works</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="photos.html">
+                            <div class="photos lists">
+                                <p class="list_title">Photos</p>
                             </div>
                         </a>
                     </li>
@@ -34,32 +53,42 @@
                             </div>
                         </a>
                     </li>
-                    <li><a href="photos.html">
-                            <div class="photos lists">
-                                <p class="list_title">Photos</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="works.html">
-                            <div class="works lists">
-                                <p class="list_title">Works</p>
-                            </div>
-                        </a>
-                    </li>
-
                 </ul>
             </nav>
         </section>
+        <!-- 共通部分終了 -->
+
         <p class="page">Works</p>
+        <div class="category">
+            <p>授業内作品</p>
+            <div class="items">
+                <a href="works/panorama.html"><img src="../img/works/panorama.png"></a>
+                <a href="works/interactive.html"><img src="../img/works/interactive.png"></a>
+                <a href="works/dailylife.html"><img src="../img/works/stayhome_1.7.1.jpg"></a>
+            </div>
+        </div>
+        <div class="category">
+            <p>Webデザイン</p>
+            <div class="items">
+                <a href="works/schoolfes.html"><img src="../img/works/schoolfes.png"></a>
+            </div>
+        </div>
+        <div class="category">
+            <p>Webサービス</p>
+            <div class="items">
+                <a href="works/timecapsuler.html"><img src="../img/works/timecapsuler.png"></a>
+            </div>
+        </div>
+
     </div>
     <script>
-        $(function() {
-            $('#icon').on('click', function() {
+        $(function () {
+            $('#icon').on('click', function () {
                 $('#nav,#paper').fadeIn();
                 // $('#nav').css('display', 'flex')
             });
 
-            $('#nav').on('click', function() {
+            $('#nav').on('click', function () {
                 $('#nav,#paper').fadeOut();
             });
 

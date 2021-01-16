@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Works</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="../../css/all.css" rel="stylesheet" type="text/css">
+    <link href="../../css/works/worksall.css" rel="stylesheet" type="text/css">
+    <link href="../../css/works/interactive.css" rel="stylesheet" type="text/css">
+</head>
+<div class="wrap">
+    <!-- 共通部分 -->
+    <header>
+        <a class="home" href="../../index.html">
+            <p class="title">Portfolio</p>
+        </a>
+    </header>
+    <a href="#nav" id="icon">
+        <p class="menufont">MENU</p>
+    </a>
+    <div id="nav"> </div>
+    <section id="paper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <div class="lists toppage">
+                            <p class="list_title">Top</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <div class="about lists">
+                            <p class="list_title">About</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../photos.html">
+                        <div class="photos lists">
+                            <p class="list_title">Photos</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../works.html">
+                        <div class="works lists">
+                            <p class="list_title">Works</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+    <!-- 共通部分終了 -->
+    <div class="content">
+        <p class="page_title">機械学習を用いたインタラクティブなWebページ</p>
+        <div class="workphotos">
+            <a href="https://example2-rabbit.glitch.me">
+                <img class="interimg" src="../../img/works/interactive.png"></a>
+        </div>
+        <p class="discription">『デザイン言語実践』の授業で制作した作品。課題のテーマは、「どうやったらZoomでの授業をより楽しく/インタラクティブにできるか!?」というものであった。
+            私の作品は、ZOOM上で、ミュートにしながらも顔を出しつつ丸ばつクイズができるというものである。教習所で行う丸ばつクイズから発想を得た。システムは以下の通りである。</p>
+        <ul>
+            <li> いないときは、「離席中」と表示される</li>
+            <li>考えているときは、考えている絵文字が表示される</li>
+            <li>左手を上げると、左手に「○」が追従</li>
+            <li> 右手を上げると、右手に「×」が追従</li>
+        </ul>
+        <p>
+            左右の手を認識し、それぞれに丸とばつの画像が対応するようにした。
+        </p>
+    </div>
+
+    <script>
+        $(function () {
+            $('#icon').on('click', function () {
+                $('#nav,#paper').fadeIn();
+            });
+
+            $('#nav').on('click', function () {
+                $('#nav,#paper').fadeOut();
+            });
+
+            locateCenter();
+            $(window).resize(locateCenter);
+            function locateCenter() {
+                let w = $(window).width();
+                let h = $(window).height();
+
+                let cw = $('#paper').outerWidth();
+                let ch = $('#paper').outerHeight();
+
+                $('#paper').css({
+                    'left': ((w - cw) / 2) + 'px',
+                    'top': ((h - ch) / 2) + 'px'
+                });
+            }
+        });
+
+    </script>
+</div>
