@@ -103,7 +103,7 @@ a {
 }
 
 .season {
-  width: 1080px;
+  width: 80%;
   display: inline-block;
 }
 
@@ -133,11 +133,24 @@ img {
   max-width: 300px;
   max-height: 200px;
   margin-top: 50px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 p.coming {
   font-size: 16px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  img {
+    width: 270px;
+  }
+}
+
+@media (max-width: 716px) {
+  img {
+    width: 80%;
+    max-height: 400px;
+  }
 }

@@ -147,3 +147,22 @@ footer {
   padding: 50px;
   position: relative;
 }
+
+
+@media (max-width: 900px) {
+  .paper {
+    width: 80%;
+    
+  }
+  .paper li{
+    width: 70%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .wrap{
+    padding-top: 30vh;
+  }
+}

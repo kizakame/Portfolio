@@ -1,7 +1,13 @@
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
 
 .wrap {
   margin-bottom: 100px;
@@ -9,6 +15,7 @@
 
 .content {
   text-align: center;
+  
 }
 
 p.page_title {
@@ -88,9 +95,17 @@ a{
   img {
     width: 270px;
   }
+
+  p.discription {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 716px) {
   img {
     width: 80%;
   }
+  figure figcaption.info {
+    max-width: 80%;
+}

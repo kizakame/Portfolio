@@ -181,5 +181,21 @@ a {
   color: #333333;
 }
 
-@media (max-width: 1190px) {
+@media (max-width: 900px) {
+  #paper {
+    width: 80%;
+    
+  }
+  #paper li{
+    width: 70%;
+  }
+
+  ul {
+    width: 100%;
+  }
+
+  .video{
+    width: 80%;
+    height: 100%;
+  }
 }

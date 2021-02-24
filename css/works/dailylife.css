@@ -1,3 +1,8 @@
 img.stayhome {
   width: 500px;
 }
+
+@media (max-width: 860px) {
+  img.stayhome {
+    width: 270px;
+  }

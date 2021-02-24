@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-left: 125px;
+  margin-left: 30px;
 }
 
 .contents {
@@ -38,4 +38,17 @@ p.ename {
 
 p.intro {
   margin-top: 48px;
+}
+
+@media (max-width: 860px) {
+  .profile{
+    display: block;
+  }
+  .intro{
+    display:inline-flex;
+  }
+  .sentence{
+    text-align: center;
+    margin-top: 30px;;
+  }
 }
