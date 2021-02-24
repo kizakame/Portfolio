@@ -3,13 +3,16 @@
   margin: 0;
 }
 
+.wrap {
+  margin-bottom: 100px;
+}
+
 .content {
   text-align: center;
 }
 
 p.page_title {
   margin-top: 100px;
-  width: 1080px;
   text-align: center;
   display: inline-block;
   font-size: 25px;
@@ -27,6 +30,46 @@ p.page_title {
 img {
   display: inline-block;
   width: 300px;
+  vertical-align: middle;
+}
+
+figure {
+  position: relative;
+  display: inline-block;
+}
+
+figure figcaption.info {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(102, 204, 204, 0.8);
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+}
+
+figure figcaption.info:hover {
+  opacity: 1;
+}
+
+figure img {
+  opacity: 1;
+  -webkit-transform: 0.3s ease-in-out;
+  transition: 0.3 ease-in-out;
+}
+
+figure:hover img {
+  opacity: 0.5;
 }
 
 p.discription {
@@ -35,5 +78,21 @@ p.discription {
 }
 
 p {
-  width: 1080px;
+  width: 70%;
+}
+
+a{
+  margin-bottom: 15px;
+}
+
+@media (max-width: 860px) {
+  img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 716px) {
+  img {
+    width: 60%;
+  }
 }

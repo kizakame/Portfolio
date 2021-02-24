@@ -19,7 +19,8 @@ p {
 
 /* リストの黒ポチが表示されない！！！ */
 ul {
-  text-align: center;
+  margin: auto;
+  width: 70%;
 }
 
 li {
@@ -79,7 +80,7 @@ p.page {
 .category p {
   font-size: 25px;
   font-family: "筑紫B丸ゴシック";
-  width: 1080px;
+  width: 70%;
   text-align: left;
   display: inline-block;
   border-bottom: medium solid #535353;
@@ -88,8 +89,10 @@ p.page {
 .items {
   display: inline-flex;
   justify-content: space-between;
-  width: 1080px;
+  align-content: space-around;
+  width: 70%;
   margin-top: 77px;
+  flex-wrap: wrap;
 }
 
 img {
@@ -132,18 +135,7 @@ p.menufont {
 }
 
 #paper {
-  /*
-    background-color: #FFFBD5;
-    opacity: 0.5;
-    width: 800px;
-    height: 500px;
-    left: 50%;
-    z-index: 60;
-    position: fixed;
-    top: 0;
-*/
   background-color: #fffbd5;
-  /*    opacity: 0.5;*/
   width: 800px;
   height: 500px;
   display: none;
@@ -170,8 +162,6 @@ p.menufont {
 #paper li {
   background-color: #fff;
   width: 600px;
-  /*    height: 90px;*/
-  /*    margin-bottom: 50px;*/
 }
 
 .lists {
@@ -189,4 +179,7 @@ a {
   border: none;
   text-decoration: none;
   color: #333333;
+}
+
+@media (max-width: 1190px) {
 }

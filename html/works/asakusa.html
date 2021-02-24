@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Works</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="../../css/all.css" rel="stylesheet" type="text/css">
+    <link href="../../css/works/worksall.css" rel="stylesheet" type="text/css">
+    <link href="../../css/works/dailylife.css" rel="stylesheet" type="text/css">
+</head>
+<div class="wrap">
+    <!-- 共通部分 -->
+    <header>
+        <a class="home" href="../../index.html">
+            <p class="title">Portfolio</p>
+        </a>
+    </header>
+    <a href="#nav" id="icon">
+        <p class="menufont">MENU</p>
+    </a>
+    <div id="nav"> </div>
+    <section id="paper">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html">
+                        <div class="lists toppage">
+                            <p class="list_title">Top</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <div class="about lists">
+                            <p class="list_title">About</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../photos.html">
+                        <div class="photos lists">
+                            <p class="list_title">Photos</p>
+                        </div>
+                    </a>
+                </li>
+                <li><a href="../works.html">
+                        <div class="works lists">
+                            <p class="list_title">Works</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </section>
+    <!-- 共通部分終了 -->
+    <div class="content">
+        <p class="page_title">Asakusa</p>
+        <div class="workphotos">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8tY41lqpVss" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p class="discription">浅草にて友達を撮影。
+        </p>
+    </div>
+
+    <script>
+        $(function () {
+            $('#icon').on('click', function () {
+                $('#nav,#paper').fadeIn();
+            });
+
+            $('#nav').on('click', function () {
+                $('#nav,#paper').fadeOut();
+            });
+
+            locateCenter();
+            $(window).resize(locateCenter);
+            function locateCenter() {
+                let w = $(window).width();
+                let h = $(window).height();
+
+                let cw = $('#paper').outerWidth();
+                let ch = $('#paper').outerHeight();
+
+                $('#paper').css({
+                    'left': ((w - cw) / 2) + 'px',
+                    'top': ((h - ch) / 2) + 'px'
+                });
+            }
+        });
+
+    </script>
+</div>

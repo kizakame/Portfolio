@@ -67,7 +67,6 @@ body {
 }
 
 .overlay .wrap::before {
-  /*    opacity: 0.95;*/
   opacity: 0.85;
 }
 

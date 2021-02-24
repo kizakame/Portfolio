@@ -2,114 +2,186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Works</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <link href="../css/works/worksall.css" rel="stylesheet" type="text/css">
-    <link href="../css/all.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <title>Works</title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link href="../css/works/worksall.css" rel="stylesheet" type="text/css" />
+  <link href="../css/all.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <div class="wrap">
-        <!-- 共通部分 -->
-        <header>
-            <a class="home" href="../index.html">
-                <p class="title">Portfolio</p>
+  <div class="wrap">
+    <!-- 共通部分 -->
+    <header>
+      <a class="home" href="../index.html">
+        <p class="title">Portfolio</p>
+      </a>
+    </header>
+    <a href="#nav" id="icon">
+      <p class="menufont">MENU</p>
+      <!--                <p>ハンバーガーアイコン</p>-->
+    </a>
+    <div id="nav"></div>
+    <section id="paper">
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <div class="lists toppage">
+                <p class="list_title">Top</p>
+              </div>
             </a>
-        </header>
-        <a href="#nav" id="icon">
-            <p class="menufont">MENU</p>
-            <!--                <p>ハンバーガーアイコン</p>-->
+          </li>
+
+          <li>
+            <a href="works.html">
+              <div class="works lists">
+                <p class="list_title">Works</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="photos.html">
+              <div class="photos lists">
+                <p class="list_title">Photos</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              <div class="about lists">
+                <p class="list_title">About</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- 共通部分終了 -->
+
+    <p class="page">Works</p>
+
+    <div class="category">
+      <p>Webサービス</p>
+      <div class="items">
+        <a href="works/timecapsuler.html">
+          <figure>
+            <img src="../img/works/timecapsuler.png" />
+            <figcaption class="info">Time Capsuler</figcaption>
+          </figure>
         </a>
-        <div id="nav"> </div>
-        <section id="paper">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">
-                            <div class="lists toppage">
-                                <p class="list_title">Top</p>
-                            </div>
-                        </a>
-                    </li>
-
-
-                    <li><a href="works.html">
-                            <div class="works lists">
-                                <p class="list_title">Works</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li><a href="photos.html">
-                            <div class="photos lists">
-                                <p class="list_title">Photos</p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html">
-                            <div class="about lists">
-                                <p class="list_title">About</p>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <!-- 共通部分終了 -->
-
-        <p class="page">Works</p>
-        <div class="category">
-            <p>授業内作品</p>
-            <div class="items">
-                <a href="works/panorama.html"><img src="../img/works/panorama.png"></a>
-                <a href="works/interactive.html"><img src="../img/works/interactive.png"></a>
-                <a href="works/dailylife.html"><img src="../img/works/stayhome_1.7.1.jpg"></a>
-            </div>
-        </div>
-        <div class="category">
-            <p>Webデザイン</p>
-            <div class="items">
-                <a href="works/schoolfes.html"><img src="../img/works/schoolfes.png"></a>
-            </div>
-        </div>
-        <div class="category">
-            <p>Webサービス</p>
-            <div class="items">
-                <a href="works/timecapsuler.html"><img src="../img/works/timecapsuler.png"></a>
-            </div>
-        </div>
-
+      </div>
     </div>
-    <script>
-        $(function () {
-            $('#icon').on('click', function () {
-                $('#nav,#paper').fadeIn();
-                // $('#nav').css('display', 'flex')
-            });
+    <div class="category">
+      <p>Webデザイン</p>
+      <div class="items">
+        <a href="works/schoolfes.html">
+          <figure>
+            <img src="../img/works/schoolfes.png" />
+            <figcaption class="info">文化祭ホームページ</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
 
-            $('#nav').on('click', function () {
-                $('#nav,#paper').fadeOut();
-            });
+    <div class="category">
+      <p>映像作品</p>
+      <div class="items">
+        <a href="works/asakusa.html">
+          <figure>
+            <img src="../img/works/asakusa.jpg" />
+            <figcaption class="info">ASAKUSA</figcaption>
+          </figure>
+        </a>
+        <a href="works/vlog-shinjuku.html">
+          <figure>
+            <img src="../img/works/vlog-shinjuku.jpg" />
+            <figcaption class="info">新宿</figcaption>
+          </figure>
+        </a>
+        <a href="works/imitation1.html">
+          <figure>
+            <img src="../img/works/imitation1.jpg" />
+            <figcaption class="info">Imitation1</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="category">
+      <p>モデリング</p>
+      <div class="items">
+        <a href="works/room.html">
+          <figure>
+            <img src="../img/works/room1.JPG" />
+            <figcaption class="info">自分の部屋のモデリング</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+    <div class="category">
+      <p>授業内作品</p>
+      <div class="items">
+        <a href="works/isu.html">
+          <figure>
+            <img src="../img/works/isu1.png" />
+            <figcaption class="info">椅子のモデリング</figcaption>　　　　　　　　　
+          </figure>
+        </a>
+        <a href="works/kaerunoseichou.html">
+          <figure>
+            <img src="../img/works/kaerunoseichou.png" />
+            <figcaption class="info">カエルの成長(Pythonゲーム)</figcaption>
+          </figure>
+        </a>
+        <a href="works/panorama.html">
+          <figure>
+            <img src="../img/works/panorama.png" />
+            <figcaption class="info">パノラマ空間で会いましょう</figcaption>
+          </figure>
+        </a>
+        <a href="works/interactive.html">
+          <figure>
+            <img src="../img/works/interactive.png" />
+            <figcaption class="info">機械学習を用いたインタラクティブなWebページ</figcaption>
+          </figure>
+        </a>
+        <a href="works/dailylife.html">
+          <figure>
+            <img src="../img/works/stayhome_1.7.1.jpg" />
+            <figcaption class="info">My daily life</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      $("#icon").on("click", function () {
+        $("#nav,#paper").fadeIn();
+        // $('#nav').css('display', 'flex')
+      });
 
-            locateCenter(); // => モーダルウィンドウを中央配置するための初期値を設定する
-            $(window).resize(locateCenter);
-            // モーダルウィンドウを中央配置するための配置場所を計算する関数
-            function locateCenter() {
-                let w = $(window).width();
-                let h = $(window).height();
+      $("#nav").on("click", function () {
+        $("#nav,#paper").fadeOut();
+      });
 
-                let cw = $('#paper').outerWidth();
-                let ch = $('#paper').outerHeight();
+      locateCenter(); // => モーダルウィンドウを中央配置するための初期値を設定する
+      $(window).resize(locateCenter);
+      // モーダルウィンドウを中央配置するための配置場所を計算する関数
+      function locateCenter() {
+        let w = $(window).width();
+        let h = $(window).height();
 
-                $('#paper').css({
-                    'left': ((w - cw) / 2) + 'px',
-                    'top': ((h - ch) / 2) + 'px'
-                });
-            }
+        let cw = $("#paper").outerWidth();
+        let ch = $("#paper").outerHeight();
+
+        $("#paper").css({
+          left: (w - cw) / 2 + "px",
+          top: (h - ch) / 2 + "px",
         });
-
-    </script>
+      }
+    });
+  </script>
 </body>
 
 </html>
