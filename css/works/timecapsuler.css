@@ -1,3 +1,8 @@
 .timecapsuler {
   width: 500px;
 }
+
+@media (max-width: 860px) {
+  .timecapsuler {
+    width: 270px;
+  }
