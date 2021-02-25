@@ -148,13 +148,12 @@ footer {
   position: relative;
 }
 
-
 @media (max-width: 900px) {
   .paper {
     width: 80%;
-    
   }
-  .paper li{
+
+  .paper li {
     width: 70%;
   }
 
@@ -162,7 +161,22 @@ footer {
     width: 100%;
   }
 
-  .wrap{
-    padding-top: 30vh;
+  .wrap {
+    padding-top: 50vh;
+  }
+
+  .opacity p {
+    font-size: 70px;
+    position: relative;
+    top: 20vh;
+  }
+
+  .opacity {
+    -webkit-align-items: normal;
+    align-items: normal;
+  }
+
+  .border {
+    top: 30px;
   }
 }

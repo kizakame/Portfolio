@@ -1,104 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Works</title>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <link href="../../css/all.css" rel="stylesheet" type="text/css">
-    <link href="../../css/works/worksall.css" rel="stylesheet" type="text/css">
-    <link href="../../css/works/panorama.css" rel="stylesheet" type="text/css">
-</head>
-<div class="wrap">
+    <link href="../../css/all.css" rel="stylesheet" type="text/css" />
+    <link
+      href="../../css/works/worksall.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="../../css/works/panorama.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <div class="wrap">
     <!-- 共通部分 -->
     <header>
-        <a class="home" href="../../index.html">
-            <p class="title">Portfolio</p>
-        </a>
+      <a class="home" href="../../index.html">
+        <p class="title">Portfolio</p>
+      </a>
     </header>
     <a href="#nav" id="icon">
-        <p class="menufont">MENU</p>
+      <p class="menufont">MENU</p>
     </a>
-    <div id="nav"> </div>
+    <div id="nav"></div>
     <section id="paper">
-        <nav>
-            <ul>
-                <li>
-                    <a href="../../index.html">
-                        <div class="lists toppage">
-                            <p class="list_title">Top</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="../about.html">
-                        <div class="about lists">
-                            <p class="list_title">About</p>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="../photos.html">
-                        <div class="photos lists">
-                            <p class="list_title">Photos</p>
-                        </div>
-                    </a>
-                </li>
-                <li><a href="../works.html">
-                        <div class="works lists">
-                            <p class="list_title">Works</p>
-                        </div>
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="../../index.html">
+              <div class="lists toppage">
+                <p class="list_title">Top</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="../about.html">
+              <div class="about lists">
+                <p class="list_title">About</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="../photos.html">
+              <div class="photos lists">
+                <p class="list_title">Photos</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="../works.html">
+              <div class="works lists">
+                <p class="list_title">Works</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
     <!-- 共通部分終了 -->
     <div class="content">
-        <p class="page_title">パノラマ空間で会いましょう</p>
-        <div class="workphotos">
-            <img class="panoimg" src="../../img/works/panorama.png">
-            <img class="panogroup" src="../../img/works/panorama_group.png">
-        </div>
+      <div class="back">
+        <a href="../works.html">◀︎back</a>
+      </div>
+      <p class="page_title">パノラマ空間で会いましょう</p>
+      <div class="workphotos">
+        <img class="panoimg" src="../../img/works/panorama.png" />
+        <img class="panogroup" src="../../img/works/panorama_group.png" />
         <p class="memo">(上:自分の作品　下:4人の作品を繋げたもの)</p>
-        <p class="discription">『デザイン言語実践』の授業で制作した作品。<br>
-            オンラインならではのグループワーク課題で、その目的は、<br>
-            ・ZOOMのギャラリー表示を活用したデザインをしたい<br>
-            ・遠隔でしかできないグループワークを探究してほしい<br>
-            ・リモートなご近所付き合いを体験してほしい<br>
-            というものでした。<br>
+      </div>
 
-            班のメンバー4人それぞれが作った作品の写真を横に並べると、まるで線路が様々な場所を通っているような作品になります。制作はZOOMのギャラリー表示を利用し、班のメンバーとコミュニケーションを取りながら行いました。
-            私の作品は、雪国をイメージしています。
-        </p>
+      <p class="discription">
+        『デザイン言語実践』の授業で制作した作品。<br />
+        オンラインならではのグループワーク課題で、その目的は、<br />
+        ・ZOOMのギャラリー表示を活用したデザインをしたい<br />
+        ・遠隔でしかできないグループワークを探究してほしい<br />
+        ・リモートなご近所付き合いを体験してほしい<br />
+        というものでした。<br />
+
+        班のメンバー4人それぞれが作った作品の写真を横に並べると、まるで線路が様々な場所を通っているような作品になります。制作はZOOMのギャラリー表示を利用し、班のメンバーとコミュニケーションを取りながら行いました。
+        私の作品は、雪国をイメージしています。
+      </p>
     </div>
 
     <script>
-        $(function () {
-            $('#icon').on('click', function () {
-                $('#nav,#paper').fadeIn();
-            });
-
-            $('#nav').on('click', function () {
-                $('#nav,#paper').fadeOut();
-            });
-
-            locateCenter();
-            $(window).resize(locateCenter);
-            function locateCenter() {
-                let w = $(window).width();
-                let h = $(window).height();
-
-                let cw = $('#paper').outerWidth();
-                let ch = $('#paper').outerHeight();
-
-                $('#paper').css({
-                    'left': ((w - cw) / 2) + 'px',
-                    'top': ((h - ch) / 2) + 'px'
-                });
-            }
+      $(function () {
+        $("#icon").on("click", function () {
+          $("#nav,#paper").fadeIn();
         });
 
+        $("#nav").on("click", function () {
+          $("#nav,#paper").fadeOut();
+        });
+
+        locateCenter();
+        $(window).resize(locateCenter);
+        function locateCenter() {
+          let w = $(window).width();
+          let h = $(window).height();
+
+          let cw = $("#paper").outerWidth();
+          let ch = $("#paper").outerHeight();
+
+          $("#paper").css({
+            left: (w - cw) / 2 + "px",
+            top: (h - ch) / 2 + "px",
+          });
+        }
+      });
     </script>
-</div>
+  </div>
+</html>

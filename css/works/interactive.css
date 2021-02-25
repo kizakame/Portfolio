@@ -6,7 +6,19 @@ img.interimg {
   img.interimg {
     width: 80%;
   }
-  ul{
+  ul {
     width: 70%;
+    /* list-style-position: inside;
+    overflow-wrap: break-word;
+    zoom: 1; */
+    /* display: flex; */
+    /* display: inline-block; */
+    overflow: auto;
+  }
+
+  .content ul li {
+    display: list-item; /*どうしても黒ポチがつかない時*/
+    list-style-type: disc;
+    margin-left: 18px;
   }
 }

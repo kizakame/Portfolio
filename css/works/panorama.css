@@ -9,5 +9,11 @@ img.panogroup {
 
 p.memo {
   margin-top: 25px;
-  width: 735px;
+  left: 0px;
+}
+
+@media (max-width: 860px) {
+  img.panogroup {
+    width: 80%;
+  }
 }

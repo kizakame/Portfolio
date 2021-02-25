@@ -184,9 +184,8 @@ a {
 @media (max-width: 900px) {
   #paper {
     width: 80%;
-    
   }
-  #paper li{
+  #paper li {
     width: 70%;
   }
 
@@ -194,7 +193,7 @@ a {
     width: 100%;
   }
 
-  .video{
+  .video {
     width: 80%;
     height: 100%;
   }

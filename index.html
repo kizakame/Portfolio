@@ -69,7 +69,8 @@
         $(window).on('scroll', function () { //スクロールした時
             var scroll = $(window).scrollTop(); //scrollを定義
             if (scroll > 50) { //50px以上スクロール
-                $('body').addClass('overlay'); //bodyにoverlayというクラスをつける。つまり.overlay .セレクタ　でスクロール後の処理を定義できる！
+                $('body').addClass(
+                    'overlay'); //bodyにoverlayというクラスをつける。つまり.overlay .セレクタ　でスクロール後の処理を定義できる！
             } else {
                 $('body').removeClass('overlay'); //50px以上スクロールしていなかったらoverlayをとる、つまり新しい処理を削除。
             }
